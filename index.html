@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Home | My Favorite Lighthouses</title>
+  <meta name="generator" content="BBEdit 15.1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="addTitles()">
+<!-- 
+  <p>
+      <a href="#main" class="jump">Jump to Main Content</a>
+  </p>
+ -->
+
+  <div id="sidebar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="topfive.html">Top 5 Lighthouses</a>
+      <a href="scoring.html">Scoring Criteria</a>
+    </nav>
+    <img src="images/LighthouseIcon.png" alt="">
+  </div>
+
+  <div id="nonnav">
+  <h1>My Favorite Lighthouses</h1>
+  <h2>Extremely scientific ratings of US lighthouses</h2>
+  
+  <div id="main" class="center chng">
+    
+    <div>
+      
+      <img src="images/LighthouseMap.png" usemap="#lhmap" id="mapid" alt="Map of lighthouse locations and ratings">
+      <map name="lhmap">
+        <a href="images/YaquinaIcon.png" data-lightbox="lh1" data-title="Yaquina Head Lighthouse: 47/50">
+          <area shape="rect" coords="82,80,144,210" href="#" alt="Yaquina Head">Yaquina
+        </a>
+        <a href="images/HecetaIcon.png" data-lightbox="lh2" data-title="Heceta Head Lighthouse: 45/50">
+          <area shape="rect" coords="20,165,81,292" href="#" alt="Heceta Head">Heceta
+        </a>
+        <a href="images/CockspurIcon.png" data-lightbox="lh3" data-title="Cockspur Island Lighthouse: 45/50">
+          <area shape="rect" coords="1320,710,1392,835" href="#" alt="Cockspur Island">Cockspur
+        </a>
+        <a href="images/NeddickIcon.png" data-lightbox="lh4" data-title="Cape Neddick Lighthouse: 45/50">
+          <area shape="rect" coords="1511,227,1561,352" href="#" alt="Cape Neddick">Neddick
+        </a>
+        <a href="images/BostonIcon.png" data-lightbox="lh5" data-title="Boston Light: 44/50">
+          <area shape="poly" coords="1480,335,1511,335,1511,354,1525,354,1524,460,1480,460" href="#" alt="Boston">Boston
+        </a>
+      </map>
+    </div>
+    <div id="homegrid" class="center">
+      <img src="images/LighthousePic.jpeg" alt="A girl in a large hat stands in front of a lighthouse">
+      <div>
+        <p class="plg">I really like lighthouses! I have developed a complex, entirely objective 
+                       scoring system for rating lighthouses. Explore this system and some of 
+                       my top lighthouse picks on this site.</p>
+      </div>
+    </div>
+  </div>
+    <footer>
+    <p>Created by Lila Levinson for Coursera Web Design for Everyone Capstone</p>
+  </footer>
+  </div>
+  
+  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/imageMapResizer.min.js"></script>
+	<script>
+		$('map').imageMapResize();
+	</script>
+	<script src="js/lightbox.js"></script>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+/* ALL PAGES */
+/* general styling of links and images */
+
+body {
+  background-color: #b2ddf7;
+}
+
+#sidebar {
+  width: 90%;
+}
+
+#sidebar img {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: serif;
+  color: #353840;
+}
+
+img {
+  width: 90%;
+  height: auto;
+  border-style: double;
+  border-width: 10px;
+  border-radius: 2%;
+  border-color: #353840;
+  padding: 10px;
+  background-color: #cabac8;
+}
+
+.center {
+  text-align: center;
+  margin: 10px auto 20px auto;
+}
+
+/* skip to main content appears on screen during focus */
+.jump {
+  position: absolute;
+  left: -1000px;
+}
+
+.jump:focus {
+  position: absolute;
+  left: 0px;
+}
+
+h1 {
+  color: #353840;
+  padding: 20px 0px 20px 0px;
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 250%;
+  background-color: #4cb5ae;
+}
+
+h2 {
+  color: #353840;
+  font-family: serif;
+  text-align: center;
+  font-size: 100%;
+  margin: 2%;
+}
+
+h3 {
+  color: #353840;
+  font-family: serif;
+  text-align: center;
+  margin: 2%;
+}
+
+h4 {
+  color: #353840;
+  font-family: serif;
+  margin: 2%;
+}
+
+p {
+  padding: 2%;
+  color: #353840;
+}
+
+footer {
+  background-color: #cabac8;
+}
+
+/* Collapsible element styling */
+.collapsible {
+  background-color: #cabac8;
+  color: #353840;
+  cursor: pointer;
+  padding: 10px;
+  width: 95%;
+  border: solid;
+  text-align: left;
+  outline: none;
+  font-size: 200%;
+}
+
+/* Collapsible content styling (Note: hidden by default)_ */
+.content {
+  padding: 5%;
+  display: none;
+  overflow: hidden;
+  background-color: #cabac8;
+  font-size: 90%;
+}
+
+/* nav styling */
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+
+}
+
+nav a {
+  font-size: 150%;
+  padding: 20px;
+  border-style: solid;
+  border-width: 3px 6px;
+  color: #5d0e00;
+  width: inherit;
+  background-color: #cabac8;
+}
+
+nav a:first-child {
+  margin-top: 20px;
+  border-width: 6px 6px 3px 6px;
+}
+
+nav a:last-child {
+  margin-bottom: 20px;
+  border-width: 3px 6px 6px 6px;
+}
+
+/* nav styling changes on hover */
+nav a:hover {
+  background-color: #4cb5ae;
+  color: #353840";
+}
+
+.allpink {
+  background-color: #4cb5ae;
+}
+
+/* HOME PAGE */
+/* content is organized in a two column grid with photo and text*/
+#homegrid {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  align-items: center;  
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  margin: 20px auto auto auto;
+}
+
+#homegrid img {
+  width: 80%;
+  margin-left: 0;
+}
+
+#homegrid div {
+  display: inline-block;
+  background-color: #cabac8;
+}
+
+.lb-image {
+  background-color: #ffffff;
+} 
+
+/* TOP FIVE */
+/* overview is in ordered list */
+ol {
+  padding: 20px;
+  color: #353840;
+}
+
+ol li {
+  margin-left: 5%;
+  font-size: 125%;
+  font-family: serif;
+  padding: 5px;
+}
+
+/* details are in a grid with collapsible elements */
+#photogrid {
+  display: grid;
+  grid-template-columns: 95%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+ul {
+  padding: 20px;
+  color: #353840;
+}
+
+ul li {
+  margin-left: 5%;
+  font-size: 125%;
+  font-family: serif;
+  padding: 5px;
+}
+
+/* SCORING PAGE */
+/* overview is located in bar, which is a grid */
+#bar {
+  z-index: 1;
+  padding: 20px 0px;
+  background-color: #4cb5ae;
+  text-align: center;
+}
+
+#bar p {
+  padding: 0;
+  font-weight: normal;
+}
+
+/* score details are located in a flex */
+#flex {
+  display: grid;
+  grid-template-columns: 85%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.criteria {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-style: solid;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #cabac8;
+}
+
+.criteria div {
+  width: 90%;
+}
+
+.criteria img {
+  width: 10%;
+}
+
+
+
+/* LAPTOP MODE */
+@media all and (min-width: 990px) {
+  /* overall */
+  #sidebar {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    margin: 0;
+    background-color: #cabac8;
+  }
+  nav {
+    text-align: left;
+    overflow: hide;
+  }
+  #nonnav {
+    float: right;
+    width: 78%;
+    margin-right: 10px;
+  }
+  nav a {
+    font-size: 125%;
+    padding: 10px 0px;
+    border-style: none;
+  }
+  #sidebar img {
+    display: block;
+    margin: 0;
+    padding-left: 10%;
+    border-style: none;
+    width: 75%;
+  }
+  h3 {
+    font-size: 80%;
+  }
+  
+  /*home */
+  .plg {
+    font-size: 100%;
+  }
+  .chng {
+    display: grid;
+    grid-template-columns: 80% 15%;
+    justify-content: space-between;
+  }
+  #homegrid {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  #homegrid div {
+    background-color: inherit;
+    text-align: left;
+  }
+  
+  /* top 5 */
+  #photogrid {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+  #photogrid h2 {
+    font-size: 75%;
+  }
+  #photogrid h3 {
+    font-size: 50%;
+  }
+  #photogrid img{
+    margin-top: 20px; 
+  }
+  .collapsible {
+    cursor: auto;
+  }
+  .content {
+    display: block;
+    font-size: 75%;
+  }
+  .content li {
+  padding: 0;
+  }
+  .plger {
+    font-size: 125%;
+    margin: 0;
+  }
+  .hsmler {
+    font-size: 200%;
+    margin: 0;    
+  }
+  ol {
+    font-size: 90%;
+    margin: 0;
+  }
+  
+  /* criteria */
+  #flex {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+  .criteria div p {
+    font-size: 1em;
+  }
+  .criteria div h3 {
+    font-size: 1.25em;
+  }
+  #bar {
+    padding: 0 0 20px 0 ;
+  }
+}
+
+/* DARK MODE */
+@media all and (prefers-color-scheme: dark) {
+  body {
+    background-color: #0c334b;
+  }
+  a {
+    color: #C8CAD0;
+  }
+  img {
+    border-color: #C8CAD0;
+    background-color: #453643;
+  }
+  h1 {
+    color: #C8CAD0;
+    background-color: #265D59;
+  }
+  h2 {
+    color: #C8CAD0;
+  }
+  h3 {
+    color: #C8CAD0;
+  }
+  h4 {
+    color: #C8CAD0;
+  }
+  p {
+    color: #C8CAD0;
+  }
+  footer {
+    background-color: #453643;
+  }
+  .collapsible {
+    background-color: #453643;
+    color: #C8CAD0;
+  }
+  .content {
+    background-color: #453643;
+  }
+  nav a {
+    color: #F9C2BD;
+    background-color: #453643;
+  }
+  nav a:hover {
+    background-color: #4cb5ae;
+    color: #353840";
+  }
+  .allpink {
+    background-color: #265D59;
+  }
+  ol {
+    color: #C8CAD0;
+  }
+  ul {
+    color: #C8CAD0;
+  }
+  #bar {
+    background-color: #265D59;
+  }
+  .criteria {
+    background-color: #453643;
+  }
+  
+  .criteria img {
+    background-color: #ffffff;
+  }
+  
+  
+}
+
+@media all and (min-width: 990px) and (prefers-color-scheme: dark) {
+  #sidebar {
+    background-color: #453643;
+  }
+}
